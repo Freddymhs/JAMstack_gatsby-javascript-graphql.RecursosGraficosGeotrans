@@ -21,7 +21,7 @@ const celulares = () => (
 
     <Row>
     <Col>
-      <TarjetasBT4/>   
+      
     </Col>
 
     </Row>

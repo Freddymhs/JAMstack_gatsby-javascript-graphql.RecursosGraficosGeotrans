@@ -21,7 +21,7 @@ const facebook = () => (
 
     <Row>
     <Col>
-      <TarjetasBT4/>   
+     
     </Col>
 
     </Row>

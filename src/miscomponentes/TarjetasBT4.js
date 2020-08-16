@@ -1,10 +1,7 @@
 import React from 'react';
 import { CardGroup, Card } from "react-bootstrap";
 
-
-
-
-
+import { Location } from '@reach/router' // ubicame
 
 const TarjetasBT4 = () => {
     return ( 
@@ -12,6 +9,11 @@ const TarjetasBT4 = () => {
 
  
   <Card className="col">
+      <Location>
+      {({ location }) => {
+           console.log(location.pathname)
+      }}
+    </Location>
     <Card.Img 
     
     variant="top" src="https://www.adslzone.net/app/uploads/2019/04/borrar-fondo-imagen.jpg" />
