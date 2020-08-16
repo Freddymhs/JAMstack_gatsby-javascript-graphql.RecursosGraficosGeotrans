@@ -1,0 +1,12 @@
+agregar bootstrap 
+yarn add react-bootstrap bootstrap
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Container, Row, Col } from 'react-bootstrap'; 
+y ya funciona bootstrap 4
+
+
+yarn add firebase
+crear archivo config
+instancia
+llamar firestore sin auth
