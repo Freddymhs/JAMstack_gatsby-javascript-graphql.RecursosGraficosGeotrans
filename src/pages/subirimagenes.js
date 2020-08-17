@@ -15,13 +15,12 @@ import "firebase/storage"
 // https://stackoverflow.com/questions/56629481/how-to-put-a-file-in-state-variable-with-react-hooks/56629701#56629701
 
 const Subirimagenes = () => {
-  const [archivosFile, setArchivosFile] = useState({ usrImagenes: "" }) // archivos  a subir
-  const [imageAsUrl, setImageAsUrl] = useState(allInputs) //nose
-  const allInputs = { imgUrl: "" }
 
+  const [archivosFile, setArchivosFile] = useState({ usrImagenes: "" }) // archivos  a subir
+  
   const cargarImagenes = e => {
     const img = e.target.files[0]
-     setArchivosFile({ usrImagenes: img })
+    setArchivosFile({ usrImagenes: img })
   }
 
   const uptoFirebaseStorage = e => {
@@ -32,9 +31,9 @@ const Subirimagenes = () => {
       // subiend ya
       const fileqt = archivosFile.usrImagenes
       const storageRef = firebase.storage().ref(`/Geotransweb/${fileqt.name}`)
-      const tarea = storageRef.put(fileqt);
+      const tarea = storageRef.put(fileqt)
 
-      console.log('logrado');
+      console.log("logrado")
       // subiendo ya
     }
   }
