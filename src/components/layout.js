@@ -26,7 +26,10 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* header layout */}
-      <Header className="bg-secondary" siteTitle={data.site.siteMetadata.title} />
+      <Header 
+      
+   
+       siteTitle={data.site.siteMetadata.title} />
     
 
     {/* contenido personalizable */}
@@ -34,8 +37,8 @@ const Layout = ({ children }) => {
         
         
         {/* footer layout */}
-        <footer className="bg-secondary">
-          © Geotrans  , developed by Fmarcosdv
+        <footer className="sticky-bottom" style={{color:'#FF6E40'}}>
+          © Geotrans resources
         </footer>
 
 
