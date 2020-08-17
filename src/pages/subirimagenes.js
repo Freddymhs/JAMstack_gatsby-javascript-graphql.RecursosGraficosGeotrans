@@ -21,7 +21,7 @@ const Subirimagenes = () => {
 
   const cargarImagenes = e => {
     const img = e.target.files[0]
-    setArchivosFile({ usrImagenes: img })
+     setArchivosFile({ usrImagenes: img })
   }
 
   const uptoFirebaseStorage = e => {
